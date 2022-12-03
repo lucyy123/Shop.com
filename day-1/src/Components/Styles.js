@@ -1,3 +1,4 @@
+import { border } from "@chakra-ui/react"
 
 const Styles={
     Navbar:{
@@ -29,6 +30,42 @@ gap:"25px"
         marginLeft:"40px"
         // margin:"auto",
         
-     }    
+     },
+     loginpage:{
+inputs:{
+width:"350px",
+border:"1px solid black",
+padding:"8px 4px"
+},
+sub_btn:{
+    width:"350px",
+    padding:"8px 4px",
+    color:"white",
+    backgroundColor:"gray",
+    borderRadius:"20px"
+
+}
+
+
+     },
+     signinpage:{
+        inputs:{
+         margin:"0px 30px",
+        width:"450px",
+        border:"1px solid black",
+        padding:"8px 4px",
+        },
+        sub_btn:{
+            width:"450px",
+            padding:"8px 4px",
+            color:"white",
+            backgroundColor:"#333336",
+            borderRadius:"20px"
+        
+        }
+        
+        
+             },
+
 }
 export default Styles

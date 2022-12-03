@@ -9,17 +9,15 @@ import { Link, Route, Routes } from "react-router-dom";
 import React, { useState } from 'react'
 // import { Icon, , } from "@chakra-ui/icons"
 import { Button, Drawer, DrawerOverlay, DrawerContent, DrawerCloseButton, DrawerBody, useDisclosure, DrawerHeader } from "@chakra-ui/react"
-
+import LoginDrawer from "./Alldrawers/LoginDrawer"
 
 
 export default function Navbar() {
-  const [size, setSize] = React.useState('')
   const { isOpen, onOpen, onClose } = useDisclosure()
 
 
 
-  const handleClick = (newSize) => {
-    setSize(newSize)
+  const handleClick = () => {
     onOpen()
   }
 
@@ -81,7 +79,7 @@ export default function Navbar() {
               >{<HamburgerIcon margin={2}></HamburgerIcon>}Categories</p>
             ))
           }
-          <Drawer placement={"left"} onClose={onClose} isOpen={isOpen} size={size}>
+          <Drawer placement={"left"} onClose={onClose} isOpen={isOpen} size={"xs"}>
             <DrawerOverlay />
             <DrawerContent>
               <DrawerCloseButton />
@@ -127,7 +125,7 @@ export default function Navbar() {
 
         </div>
         <div style={Styles.shoppingicons} >
-          <Link  to="/loginPage"> <Avatar bg='Black' size="xs" mx={2} />Sign in </Link>
+          {<LoginDrawer gap={gap}/> }
           <Link to="/orderPage"> <RepeatClockIcon size="xs"  mx={2} />Orders</Link>
           <Link  to="/cartPage"> <img src="https://img.shop.com/Image/resources/images/icon-shopping-cart-24px.svg" alt="" style={{ display: "inline",marginRight:"5px" }} />
           <p style={{display:"inline",position:"relative",top:"-4px"}}>Cart</p>  </Link>

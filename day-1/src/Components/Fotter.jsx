@@ -14,14 +14,14 @@ export default function Fotter() {
       </div>
 
       <div style={{display:"grid", gridTemplateColumns:"90% 10%",backgroundColor: "#333336"}} >
-        <div style={{ display: "flex", padding: "0px 10px", backgroundColor: "#333336", color: "white" }} >
-          <Link to="/About" style={{ borderRight: "1px solid", padding: "0px 8px" }} > About us</Link>
-          <Link to="/About" style={{ borderRight: "1px solid", padding: "0px 8px" }} >Help</Link>
-          <Link to="/About" style={{ borderRight: "1px solid", padding: "0px 8px" }} > Accsessibility Statement</Link>
-          <Link to="/About" style={{ borderRight: "1px solid", padding: "0px 8px" }} > Contact Us</Link>
-          <Link to="/About" style={{ borderRight: "1px solid", padding: "0px 8px" }} >Partner With US</Link>
-          <Link to="/About" style={{ borderRight: "1px solid", padding: "0px 8px" }} >Country/ Region</Link>
-          <Link to="/About" style={{ borderRight: "1px solid", padding: "0px 8px" }} >Connect</Link>
+        <div style={{ display: "flex", padding: "2px 10px", backgroundColor: "#333336", color: "white" }} >
+          <Link to="/About" style={{ borderRight: "1px solid", padding: "5px 8px" }} > About us</Link>
+          <Link to="/About" style={{ borderRight: "1px solid", padding: "5px 8px" }} >Help</Link>
+          <Link to="/About" style={{ borderRight: "1px solid", padding: "5px 8px" }} > Accsessibility Statement</Link>
+          <Link to="/About" style={{ borderRight: "1px solid", padding: "5px 8px" }} > Contact Us</Link>
+          <Link to="/About" style={{ borderRight: "1px solid", padding: "5px 8px" }} >Partner With US</Link>
+          <Link to="/About" style={{ borderRight: "1px solid", padding: "5px 8px" }} >Country/ Region</Link>
+          <Link to="/About" style={{ borderRight: "1px solid", padding: "5px 8px" }} >Connect</Link>
          
 
         </div>
